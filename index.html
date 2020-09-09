@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Celebration Cakes</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+        integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2:wght@600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        #logo {
+            height: 15px;
+            width: 16px;
+            margin: auto 714px;
+        }
+
+        #logo img {
+            width: 82px;
+            height: 79px;
+        }
+
+        #logo img:hover {
+            cursor: pointer;
+            transform: scale(2);
+        }
+
+        .topnav {
+            overflow: hidden;
+            position: sticky;
+            top: 0;
+            background-color:palegoldenrod;
+        }
+
+        .topnav a {
+            float: left;
+            color: black;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+            font-family: 'Baloo Bhaina 2', cursive;
+        }
+
+        .topnav a:hover {
+            color: rgb(192, 182, 182);
+        }
+
+        .topnav-right a {
+            float: right;
+        }
+
+        hr {
+            width: 100%;
+        }
+
+        section a {
+            text-decoration: none;
+            display: block;
+            text-align: center;
+            margin-top: 17px;
+            font-size: 20px;
+            color: black;
+            font-family: 'Baloo Bhaina 2', cursive;
+            letter-spacing: 0.4rem;
+            border: 2px solid powderblue;
+            margin: 16px 632px;
+            background-color: #e5c9e5;
+        }
+
+        .row {
+            display: flex;
+        }
+
+        .column {
+            flex: 33.33%;
+            padding: 5px;
+            width: 100%;
+        }
+
+        .column img {
+            padding: 23px;
+            height: 700px;
+            border: 3px solid brown;
+        }
+
+        .btn {
+            margin: auto 156px;
+            height: 48px;
+            width: 177px;
+            background-color: white;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+
+        .btn:hover {
+            border: 2px solid black;
+        }
+
+        section h2 {
+            text-align: center;
+            border: 2px solid white;
+            background: url(grey_strip.png);
+            border-width: 49px;
+            padding: 45px;
+            margin: -20px;
+            font-family: 'Baloo Bhaina 2', cursive;
+            letter-spacing: 0.2rem;
+        }
+
+        .row2 {
+            display: flex;
+        }
+
+        .column2 {
+            flex: 50%;
+            padding: 28px;
+            margin-bottom: -594px;
+        }
+
+        .column2 img {
+            border: 2px solid brown;
+        }
+
+        .container {
+            display: grid;
+            grid-gap: 1rem;
+            grid-template-areas:
+                'Our_design Our_design Our_workers Our_workers';
+        }
+
+        #Our_design {
+            grid-area: Our_design;
+        }
+
+        #Our_workers {
+            grid-area: Our_workers;
+        }
+
+        .cake_items {
+            border: 3px solid black;
+    text-align: center;
+    padding: 1px 7px;
+    font-family: 'Baloo Bhaina 2', cursive;
+    color: white;
+    background: url(abc.jpg) no-repeat center center/cover;
+    margin: 25px 20px;
+        }
+
+        .cake2_items {
+            border: 3px solid black;
+            text-align: center;
+            padding: 23px;
+            font-family: 'Baloo Bhaina 2', cursive;
+            color: white;
+            background: url('abc2.jpg') no-repeat center center/cover;
+            margin: 25px;
+            opacity: 0.7;
+        }
+
+        .row3 {
+            display: flex;
+        }
+
+        .column3 {
+            flex: 12.5%;
+            padding: 5px;
+            margin: 1px;
+        }
+
+        .column3 img:hover {
+            opacity: 0.7;
+            cursor: pointer;
+        }
+
+        .second_last {
+            text-align: center;
+        }
+
+        .second_last input {
+            border: 2px solid red;
+            font-size: 25px;
+            margin-bottom: 7px;
+            font-family: 'Baloo Bhaina 2', cursive;
+        }
+
+        .btn1 button {
+            font-size: 25px;
+            font-family: 'Baloo Bhaina 2', cursive;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            background-color: rgb(238, 173, 195);
+        }
+
+        i.facebook {
+            color: blue;
+        }
+
+        i.twitter {
+            color: rgb(37, 184, 233);
+        }
+
+        i.pinterest {
+            color: red;
+        }
+
+        i.instagram {
+            color: rgb(187, 28, 55);
+        }
+
+        i.follow_insta {
+            font-size: 35px;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="topnav">
+        <div id="logo">
+            <img src="logo.jpg" alt="Bakery Shop">
+        </div>
+        <a class="active" href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#Order">Order</a>
+        <a href="#contact">Contact</a>
+        <div class="topnav-right">
+            <a href="https://facebook.com"><i class="fab fa-facebook facebook"></i></a>
+            <a href="https://twitter.com"><i class="fab fa-twitter twitter"></i></a>
+            <a href="https://pinterest.com"><i class="fab fa-pinterest pinterest"></i></a>
+            <a href="https://instagram.com"><i class="fab fa-instagram instagram"></i></a>
+        </div>
+    </div>
+    <hr>
+    <section>
+        <a href="#">GAURAV BAKES.</a>
+    </section>
+    <div class="row">
+        <div class="column">
+            <img src="cake1.jpg" alt="Cake" style="width:100%">
+        </div>
+        <div class="column">
+            <img src="cake2.jpg" alt="Order here" style="width:100%">
+            <button class="btn">ORDER HERE</button>
+        </div>
+        <div class="column">
+            <img src="cake3.jpg" alt="Child Cake" style="width:100%">
+        </div>
+    </div>
+    <section>
+        <h2>ALL CAKES ARE TAILORED TO YOUR TASTE AND STYLE</h2>
+    </section>
+    <div class="row2">
+        <div class="column2">
+            <img src="hanna.jpg" alt="Meet Hanna" style="width: 100%">
+        </div>
+        <div class="column2">
+            <img src="donuts.jpg" alt="Donuts" style="width: 100%;height: 44.3%">
+        </div>
+    </div>
+    <div class="container">
+        <div id="Our_design" class="cake_items">
+            <h1>TRADITIONAL CAKE FLAVOURS</h1>
+            Vanilla Almond- Light and sweet but moist and rich in flavor, our Vanilla Almond cake is filled and frosted
+            with our house vanilla buttercream. Vanilla Almond Amycakes are decorated with sparkly clear crystal
+            sprinkles, pearl sprinkles and a ring of buttercream rosettes.
+
+            Golden Vanilla- Old fashioned, buttery golden yellow cake, just as moist and dense as Grandma used to make.
+            Filled and frosted with our house vanilla buttercream. Golden Vanilla Amycakes are decorated with ascending
+            gold sprinkles, white ganache drizzle and white chocolate curls and flakes.
+
+            Golden Chocolate- Old fashioned, buttery golden yellow cake, just as moist and dense as Grandma used to
+            make. Filled and frosted with our house chocolate buttercream. Golden Chocolate Amycakes are decorated with
+            ascending gold sprinkles, chocolate ganache drizzle and dark chocolate curls and flakes.
+
+            Double Chocolate- Rich, fudgy chocolate cake filled and frosted with our house chocolate buttercream. Double
+            Chocolate Amycakes are decorated with chocolate flakes and chocolate ganache drizzle.
+
+            Confetti- Moist Vanilla Almond cake studded with confetti sprinkles in the batter. Confetti Amycakes are
+            frosted with vanilla buttercream and decorated with colorful sprinkles.
+
+            Zebra- Alternating layers of vanilla almond and chocolate cakes, filled and frosted with our house vanilla
+            buttercream. Zebra Amycakes are decorated with chocolate ganache drizzle and white and chocolate curls.
+
+        </div>
+        <div id="Our_workers" class="cake2_items">
+            <h1>DELUXE CAKE FLAVOURS</h1>
+            Fresh Strawberry- Made with real strawberries, this pretty pink cake is filled and frosted with our fresh
+            strawberry buttercream. Strawberry Amycakes are decorated with a ring of strawberry buttercream rosettes and
+            fresh strawberry halves.
+
+            Neapolitan- Vanilla almond, strawberry and chocolate cake layers, filled and frosted with our house vanilla,
+            strawberry and chocolate buttercream. Neapolitan Amycakes are decorated with all three frostings and with a
+            ring of chocolate, vanilla and strawberry rosettes.
+
+            Triple Chocolate Ganache-For the dark chocolate lovers! Chocolate cake filled with homemade chocolate
+            gananche, frosted with our chocolate buttercream. Triple Chocolate Amycakes are decorated with chocolate
+            ganache drizze and dark chocolate curls and flakes.
+
+            Peanut Butter Fudge- Chocolate cake filled with homemade chocolate gananche, frosted with our creamy Peanut
+            Butter buttercream. Peanut Butter Fudge Amycakes are decorated with dark chocolate ganache drizzle, dark
+            chocolate curls and flakes and peanut butter cups.
+
+            Golden Strawberry- Buttery, golden vanilla cake filled with three layers of fresh strawberry compote and
+            frosted with our house vanilla buttercream. (Golden Raspberry and Golden Triple Berry available by request).
+            Golden Strawberry Amycakes are decorated with fresh strawberries, gold sprinkles and white chocolate flakes.
+        </div>
+    </div>
+    <section>
+        <h2>FOLLOW ME ON INSTAGRAM <a href="https://instagram.com"><i
+                    class="fab fa-instagram instagram follow_insta"></i></a></h2>
+    </section>
+    <div class="row3">
+        <div class="column3">
+            <img src="lastimg1.jpg" alt="cake1" style="width: 100%;height:70.5%">
+        </div>
+        <div class="column3">
+            <img src="lastimg2.jpg" alt="cake2" style="width: 100%;height:70.5%">
+        </div>
+        <div class="column3">
+            <img src="lastimg3.jpg" alt="cake3" style="width: 100%;height:70.5%">
+        </div>
+        <div class="column3">
+            <img src="lastimg4.jpg" alt="cake4" style="width: 100%;height:70.5%">
+        </div>
+        <div class="column3">
+            <img src="lastimg5.jpg" alt="cake5" style="width: 100%;height:70.5%">
+        </div>
+        <div class="column3">
+            <img src="lastimg6.jpg" alt="cake6" style="width: 100%;height:70.5%">
+        </div>
+        <div class="column3">
+            <img src="lastimg7.jpg" alt="cake7" style="width: 100%;height:70.5%">
+        </div>
+        <div class="column3">
+            <img src="lastimg8.jpg" alt="cake8" style="width: 100%;height:70.5%">
+        </div>
+    </div>
+    <section>
+        <h2>Subscribe to My Newsletter</h2>
+    </section>
+    <section class="second_last">
+        <input type="email" name="" id="" placeholder="Enter your email here">
+        <div class="btn1">
+            <button>Subscribe Now</button>
+        </div>
+    </section>
+    <footer>
+        &copy;2023 by Gaurav Bakes. Proudly created with Wix.com
+    </footer>
+</body>
+
+</html>
